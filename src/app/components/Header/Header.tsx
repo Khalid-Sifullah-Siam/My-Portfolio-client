@@ -237,13 +237,14 @@ const Header = () => {
                       </a>
                     </li>
                     <li className="group flex items-center gap-2 font-semibold text-gray-400 hover:text-white transition-all duration-200">
-                      <Link
-                        href="/"
+                      <a
+                        href="https://drive.google.com/uc?export=download&id=1EahL5hbPGUQvJ7gFTagCZQ3pyDqlWVx7"
+                        download="Resume.pdf"
                         className="flex items-center gap-2 text-gray-400 hover:text-white transition-all duration-200"
                       >
                         Resume
                         <CiShare1 className="transition-transform duration-200 group-hover:rotate-90" />
-                      </Link>
+                      </a>
                     </li>
                     <li>
                       <Link
