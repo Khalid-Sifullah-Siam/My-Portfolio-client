@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { CiShare1 } from "react-icons/ci";
+import { FiCode, FiLayers, FiZap } from "react-icons/fi";
 import { IoIosArrowForward } from "react-icons/io";
 import { MdOutlineMailOutline } from "react-icons/md";
 import axiosInstance from "../../sharedComponents/AxiosInstance/AxiosInstance";
@@ -142,14 +143,64 @@ const HomePage = () => {
         </div>
       </div>
 
+      <section className="mt-8 border-t border-white/10 py-10 sm:mt-10 sm:py-12">
+        <div className="mx-auto max-w-3xl text-center">
+          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-orange-400">
+            Core Expertise
+          </p>
+          <h2 className="mt-2 text-2xl font-bold text-white sm:text-3xl">
+            Building complete digital experiences
+          </h2>
+          <p className="mt-3 text-sm leading-relaxed text-gray-400 sm:text-base">
+            I combine thoughtful interfaces, reliable systems, and performance-focused
+            delivery to build products that work smoothly from idea to launch.
+          </p>
+        </div>
+
+        <div className="mt-7 grid gap-4 md:grid-cols-3">
+          <article className="rounded-xl border border-white/10 bg-white/3 p-5 transition-colors hover:border-orange-400/40 hover:bg-white/5">
+            <FiCode className="text-2xl text-orange-400" />
+            <h3 className="mt-4 text-lg font-semibold text-white">
+              Frontend Engineering
+            </h3>
+            <p className="mt-2 text-sm leading-relaxed text-gray-400">
+              Responsive, accessible interfaces built with React, Next.js, and
+              modern styling systems.
+            </p>
+          </article>
+
+          <article className="rounded-xl border border-white/10 bg-white/3 p-5 transition-colors hover:border-orange-400/40 hover:bg-white/5">
+            <FiLayers className="text-2xl text-orange-400" />
+            <h3 className="mt-4 text-lg font-semibold text-white">
+              Backend & APIs
+            </h3>
+            <p className="mt-2 text-sm leading-relaxed text-gray-400">
+              Secure APIs and scalable application logic using Node.js, Express,
+              and MongoDB.
+            </p>
+          </article>
+
+          <article className="rounded-xl border border-white/10 bg-white/3 p-5 transition-colors hover:border-orange-400/40 hover:bg-white/5">
+            <FiZap className="text-2xl text-orange-400" />
+            <h3 className="mt-4 text-lg font-semibold text-white">
+              Performance & Delivery
+            </h3>
+            <p className="mt-2 text-sm leading-relaxed text-gray-400">
+              Optimized builds, dependable deployments, and maintainable code
+              prepared for long-term growth.
+            </p>
+          </article>
+        </div>
+      </section>
+
       <Link
         href="/about"
-        className="group ml-auto mt-6 flex w-fit items-center justify-end gap-3 rounded-md px-4 py-2.5 transition-all duration-300 hover:bg-gray-800/50 sm:mt-8"
+        className="group ml-auto mb-4 flex w-fit items-center justify-end gap-3 rounded-md px-4 py-2.5 transition-all duration-300 hover:bg-gray-800/50 sm:mb-6"
       >
         <span className="text-lg font-semibold text-gray-300 group-hover:text-white">
           About Me
         </span>
-        <IoIosArrowForward className="text-xl text-orange-400 group-hover:translate-x-1 transition-transform" />
+        <IoIosArrowForward className="text-xl text-orange-400 transition-transform group-hover:translate-x-1" />
       </Link>
     </div>
   );
