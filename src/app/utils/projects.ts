@@ -978,4 +978,57 @@ export const projects = [
       "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/English-Janala/main/assets/Images/Screenshot%20%2880%29.png",
     ],
   },
+  {
+    id: 17,
+    title: "PathPilot AI",
+    slug: "pathpilot-ai",
+    short_description:
+      "PathPilot AI is an AI-powered career navigation platform that helps users discover suitable career paths, understand skill gaps, and plan their next steps.",
+    descriptioin:
+      "PathPilot AI turns career uncertainty into an actionable route through personalized recommendations, career roadmaps, skill-gap analysis, and a context-aware AI copilot that remembers previous conversations.",
+    techStack: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "TanStack Query",
+      "Recharts",
+      "Express.js",
+      "MongoDB",
+      "Google Sign-In",
+    ],
+    features: [
+      "Career explorer with search, filters, sorting, and pagination",
+      "Career details with skills, outcomes, roadmaps, and reviews",
+      "Personalized AI career recommendations with match confidence",
+      "Skill-gap analysis with practical next steps",
+      "Context-aware AI copilot with conversation history",
+      "Email/password authentication, demo access, and Google Sign-In",
+      "Protected career publishing and ownership-aware management",
+      "Responsive loading, error, empty, and protected-route states",
+    ],
+    challenges: [
+      "Designing a useful AI recommendation workflow around structured career data",
+      "Maintaining conversation context across AI copilot interactions",
+      "Building responsive and accessible states for API-driven pages",
+    ],
+    learnings: [
+      "Building production-ready Next.js applications with TypeScript",
+      "Integrating TanStack Query for reliable API data management",
+      "Creating AI-assisted experiences with clear user feedback",
+      "Designing responsive career discovery and planning workflows",
+    ],
+    futurePlans: [
+      "Add more career paths and richer career outcome data",
+      "Introduce saved career paths and progress tracking",
+      "Improve AI recommendations with more personalized feedback signals",
+    ],
+    links: [
+      { name: "Live Demo", url: "https://pathpilot-client.vercel.app/" },
+      { name: "GitHub", url: "https://github.com/Khalid-Sifullah-Siam/PathPilot-client" },
+    ],
+    screenshots: [
+      "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/PathPilot-client/main/public/images/Screenshot%20%28538%29.png",
+    ],
+  },
 ];
