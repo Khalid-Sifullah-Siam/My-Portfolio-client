@@ -525,5 +525,69 @@ export const projects = [
       "https://image.thum.io/get/width/1920/crop/1080/https://doc-appoint-client-siam-17.vercel.app/v1/dashboard/profile",
       "https://image.thum.io/get/width/1920/crop/1080/https://doc-appoint-client-siam-17.vercel.app/v1/dashboard/bookings",
     ],
+  },
+  {
+    id: 10,
+    title: "Tech Bazaar",
+    slug: "tech-bazaar",
+    short_description:
+      "Tech Bazaar is a role-based marketplace for discovering products, selling online, and making secure payments.",
+    descriptioin:
+      "Tech Bazaar brings buyers, sellers, and admins into one responsive marketplace. Buyers can browse and purchase approved products, sellers can manage products and plans, and admins can moderate accounts, products, and payments.",
+    techStack: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "MongoDB",
+      "Better Auth",
+      "Stripe",
+      "HeroUI",
+      "Framer Motion",
+      "ImgBB",
+    ],
+    features: [
+      "Role-based buyer, seller, and admin dashboards",
+      "Product search, category filters, sorting, and pagination",
+      "Stripe Checkout with payment history",
+      "Seller product, sales, revenue, and plan management",
+      "Admin account and product moderation",
+      "Protected routes and profile management",
+      "Responsive UI with toast feedback and animations",
+    ],
+    challenges: [
+      "Designing separate workflows for three user roles",
+      "Integrating secure Stripe payment and confirmation flows",
+      "Keeping product moderation and marketplace data consistent",
+    ],
+    learnings: [
+      "Role-based access control with Better Auth",
+      "Stripe Checkout and payment record integration",
+      "Building a complete marketplace workflow with Next.js",
+    ],
+    futurePlans: [
+      "Add product reviews, wishlists, and order tracking",
+      "Introduce seller analytics and promotional campaigns",
+      "Improve marketplace recommendations and notification features",
+    ],
+    links: [
+      {
+        name: "Live Demo",
+        url: "https://tech-bazar-client.vercel.app/",
+      },
+      {
+        name: "GitHub",
+        url: "https://github.com/Khalid-Sifullah-Siam/tech-Bazaar-client",
+      },
+    ],
+    screenshots: [
+      "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/tech-Bazaar-client/main/public/images/Screenshot%20%28477%29.png",
+      "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/tech-Bazaar-client/main/public/images/Screenshot%20%28478%29.png",
+      "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/tech-Bazaar-client/main/public/images/Screenshot%20%28479%29.png",
+      "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/tech-Bazaar-client/main/public/images/Screenshot%20%28480%29.png",
+      "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/tech-Bazaar-client/main/public/images/Screenshot%20%28481%29.png",
+      "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/tech-Bazaar-client/main/public/images/Screenshot%20%28482%29.png",
+      "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/tech-Bazaar-client/main/public/images/Screenshot%20%28483%29.png",
+      "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/tech-Bazaar-client/main/public/images/Screenshot%20%28484%29.png",
+    ],
   }
 ];
