@@ -58,13 +58,13 @@ const HomePage = () => {
 
 
   return (
-    <div className="mt-6 max-w-6xl mx-auto md:px-4">
-      <div className="flex flex-col md:flex-row gap-10 items-center md:items-start">
+    <div className="mx-auto mt-4 max-w-6xl sm:mt-6">
+      <div className="flex flex-col items-center gap-8 lg:flex-row lg:items-start lg:gap-10">
         {/* Left side - Profile Image with Glass Badges Below */}
-        <div className="md:w-1/3 flex justify-center">
+        <div className="flex w-full justify-center lg:w-1/3">
           <div className="relative mt-10 md:mt-0 flex flex-col items-center">
             {/* Main Profile Image */}
-            <div className="relative w-52 h-52 sm:w-60 sm:h-60 md:w-72 md:h-72 rounded-full overflow-hidden border-2 border-white/20 shadow-2xl shadow-black/30 backdrop-blur-sm z-10">
+            <div className="relative z-10 h-44 w-44 overflow-hidden rounded-full border-2 border-white/20 shadow-2xl shadow-black/30 backdrop-blur-sm min-[375px]:h-52 min-[375px]:w-52 sm:h-60 sm:w-60 lg:h-64 lg:w-64 xl:h-72 xl:w-72">
 <Image
     src={profilePicture || "/profile.jpg"}  
     alt="Khalid Saifullah Siam - Professional Portrait"
@@ -76,7 +76,7 @@ const HomePage = () => {
             </div>
 
             {/* Glass Ring */}
-            <div className="absolute top-[44%] -translate-y-1/2 w-68 h-68 sm:w-76 sm:h-76 md:w-84 md:h-84 rounded-full border border-white/10 backdrop-blur-3xl bg-white/2" />
+            <div className="absolute top-[44%] h-56 w-56 -translate-y-1/2 rounded-full border border-white/10 bg-white/2 backdrop-blur-3xl min-[375px]:h-68 min-[375px]:w-68 sm:h-76 sm:w-76 lg:h-80 lg:w-80 xl:h-84 xl:w-84" />
 
             {/* Badges Below Image - Horizontal Row with Dots */}
             <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 md:gap-4 mt-6 sm:mt-8 z-10">
@@ -99,14 +99,14 @@ const HomePage = () => {
         </div>
 
         {/* Right side - Content */}
-        <div className="md:w-2/3">
-          <h1 className="text-white text-4xl md:text-5xl font-bold">
+        <div className="w-full text-center lg:w-2/3 lg:text-left">
+          <h1 className="text-3xl font-bold text-white sm:text-4xl xl:text-5xl">
             Khalid Saifullah Siam
           </h1>
           <br />
-          <h1 className="text-orange-400 text-3xl md:text-4xl font-bold">
+          <h2 className="text-2xl font-bold text-orange-400 sm:text-3xl xl:text-4xl">
             Code Freak, <br /> Problem Solver!
-          </h1>
+          </h2>
           <br />
           <p className="text-gray-300 text-base md:text-lg leading-relaxed">
             I am a dedicated Software Engineer specializing in full-stack
@@ -117,8 +117,8 @@ const HomePage = () => {
             user-centric software solutions.
           </p>
           <br />
-          <div className="flex flex-wrap items-center gap-3">
-            <div className="flex items-center gap-2 bg-orange-600 hover:bg-orange-700 px-5 py-2.5 rounded-md font-semibold transition-all duration-300 cursor-pointer group">
+          <div className="flex flex-col items-stretch gap-3 min-[400px]:flex-row min-[400px]:items-center lg:justify-start">
+            <div className="group flex items-center justify-center gap-2 rounded-md bg-orange-600 px-5 py-2.5 font-semibold transition-all duration-300 hover:bg-orange-700">
               <a
                 href={resumeUrl}
                 download="Resume.pdf"
@@ -128,7 +128,7 @@ const HomePage = () => {
               </a>
               <CiShare1 className="text-white group-hover:translate-y-0.5 transition-transform" />
             </div>
-            <div className="flex items-center gap-2 px-5 py-2.5 rounded-md font-semibold transition-all duration-300 cursor-pointer hover:bg-gray-800/50 group">
+            <div className="group flex items-center justify-center gap-2 rounded-md px-5 py-2.5 font-semibold transition-all duration-300 hover:bg-gray-800/50">
               <MdOutlineMailOutline className="text-orange-400 text-xl group-hover:scale-110 transition-transform" />
               <a
                 href="mailto:khalidsiam1754@gmail.com"

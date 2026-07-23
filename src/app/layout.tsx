@@ -87,10 +87,10 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7757119469762225"
           crossOrigin="anonymous"></script>
-        <div className="w-full max-w-10/12 mx-auto">
-          <main className="min-h-screen flex gap-6">
+        <div className="mx-auto w-full max-w-[1600px]">
+          <main className="flex min-h-screen min-w-0">
             {/* Content */}
-            <section className="flex-1">{children}</section>
+            <section className="min-w-0 flex-1">{children}</section>
           </main>
         </div>
       </body>

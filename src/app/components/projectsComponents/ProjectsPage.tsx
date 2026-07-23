@@ -21,7 +21,7 @@ const ProjectsPage = () => {
   return (
     <div className="py-4">
       <h1 className="text-3xl font-bold text-white">Projects</h1>
-      <p className="text-gray-300 font-bold text-3xl py-4">
+      <p className="py-4 text-xl font-bold text-gray-300 sm:text-2xl lg:text-3xl">
         A lot of ideas,but some are still under development!
       </p>
       {/* Projects Grid */}
@@ -42,7 +42,7 @@ const ProjectsPage = () => {
 
       <nav
         aria-label="Projects pagination"
-        className="mt-8 flex items-center justify-center gap-2"
+        className="mt-8 flex max-w-full items-center justify-start gap-2 overflow-x-auto pb-2 sm:justify-center"
       >
         <button
           type="button"
@@ -83,7 +83,7 @@ const ProjectsPage = () => {
         </button>
       </nav>
 
-      <div className="flex items-center justify-between py-8">
+      <div className="flex flex-wrap items-center justify-between gap-3 py-8">
         <div className="flex items-center gap-2 px-4 py-2 rounded-md hover:bg-gray-900 cursor-pointer">
           <IoIosArrowBack />
           <Link href="/about" className="text-white font-bold">

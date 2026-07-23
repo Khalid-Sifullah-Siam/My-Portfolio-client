@@ -63,7 +63,7 @@ const EducationalQualificationPage = () => {
         ))}
       </section>
 
-      <div className="flex items-center justify-between">
+      <div className="flex flex-wrap items-center justify-between gap-3">
         <Link
           href="/about"
           className="flex items-center gap-2 rounded-md px-4 py-2 font-bold text-white hover:bg-gray-900"

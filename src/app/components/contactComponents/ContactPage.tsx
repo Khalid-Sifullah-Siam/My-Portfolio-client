@@ -15,14 +15,14 @@ const ContactPage = () => {
     <div className="min-h-screen bg-black relative overflow-hidden">
       {/* Background gradients */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,var(--tw-gradient-stops))] from-blue-900/20 via-[#0a0a0a] to-[#0a0a0a]" />
-      <div className="absolute top-0 left-0 w-150 h-150 bg-blue-600/10 blur-[150px] rounded-full animate-pulse" />
-      <div className="absolute bottom-0 right-0 w-150 h-150 bg-purple-600/10 blur-[150px] rounded-full animate-pulse delay-1000" />
+      <div className="absolute left-0 top-0 h-72 w-72 rounded-full bg-blue-600/10 blur-[100px] sm:h-150 sm:w-150 sm:blur-[150px]" />
+      <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-purple-600/10 blur-[100px] sm:h-150 sm:w-150 sm:blur-[150px]" />
 
       <div className="relative z-10 px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
         <div className="max-w-6xl mx-auto">
           {/* Header Section */}
           <div className="text-center mb-12 sm:mb-16 lg:mb-20">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">
+            <h1 className="mb-4 text-3xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
               Let's Connect
             </h1>
             <p className="text-lg sm:text-xl text-gray-300 mb-2">
@@ -32,7 +32,7 @@ const ContactPage = () => {
           </div>
 
           {/* Contact Options Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-8 mb-16 lg:mb-24">
+          <div className="mb-16 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:gap-6 xl:grid-cols-3 2xl:grid-cols-5 2xl:gap-5">
             {/* Email Card */}
             <a
               href="mailto:khalidsiam1754@gmail.com"

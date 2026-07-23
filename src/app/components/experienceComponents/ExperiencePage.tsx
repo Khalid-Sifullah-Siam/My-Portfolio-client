@@ -44,8 +44,8 @@ const ExperiencePage = () => {
 
   return (
     <div>
-      <h1 className="text-3xl text-white font-bold py-4">Experience</h1>
-      <p className="text-3xl font-semibold text-gray-300 py-4">
+      <h1 className="py-4 text-2xl font-bold text-white sm:text-3xl">Experience</h1>
+      <p className="py-4 text-xl font-semibold text-gray-300 sm:text-2xl lg:text-3xl">
         You need it to get the job, but the job`s what gives it!
       </p>
       <p className="text-lg text-gray-200 font-medium py-4">
@@ -110,7 +110,7 @@ const ExperiencePage = () => {
           ))}
         </div>
       </div>
-      <div className="flex py-8 items-center justify-between">
+      <div className="flex flex-wrap items-center justify-between gap-3 py-8">
         <div className="flex items-center gap-2 px-4 py-2 rounded-md hover:bg-gray-900 cursor-pointer">
           <IoIosArrowBack />
           <Link href="/skills-tools" className="text-white font-bold">

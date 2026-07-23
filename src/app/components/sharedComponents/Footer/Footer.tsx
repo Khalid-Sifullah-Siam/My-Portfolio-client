@@ -7,7 +7,7 @@ const Footer = () => {
         <hr className="border-gray-800 mb-6" />
 
         {/* Footer Links */}
-        <div className="flex items-center justify-center gap-6 flex-wrap mb-4">
+        <div className="mb-4 flex flex-wrap items-center justify-center gap-x-5 gap-y-3 text-sm sm:text-base">
           <Link
             href="/privacy-policy"
             className="text-gray-500 hover:text-white transition duration-300"

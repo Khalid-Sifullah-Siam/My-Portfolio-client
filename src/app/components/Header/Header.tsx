@@ -192,16 +192,20 @@ const Header = () => {
 
       {/* Header */}
       <div className="sticky top-0 z-40 py-3 md:py-4 bg-black/80 backdrop-blur-2xl border-b border-gray-800">
-        <div className="container mx-auto px-4">
+        <div className="mx-auto w-full px-3 sm:px-4">
           <div className="flex items-center justify-between">
             {/* Mobile Menu Button */}
-            <GiHamburgerMenu
-              className="text-xl cursor-pointer md:hidden text-white hover:text-orange-400 transition-colors"
+            <button
+              type="button"
+              aria-label="Open navigation menu"
               onClick={openMenu}
-            />
+              className="shrink-0 rounded-md p-1 text-white transition-colors hover:text-orange-400 xl:hidden"
+            >
+              <GiHamburgerMenu className="text-xl" />
+            </button>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:block">
+            <div className="hidden xl:block">
               <div className="flex items-center gap-10">
                 <div className="flex items-center gap-2 group cursor-pointer">
                   <FaArrowUp className="rotate-45 text-2xl text-orange-400 group-hover:rotate-90 transition-transform duration-300" />
@@ -263,11 +267,11 @@ const Header = () => {
             </div>
 
             {/* Right Side Items */}
-            <div className="flex items-center gap-3 md:gap-6">
-              <div className="hidden md:block">
+            <div className="flex min-w-0 items-center gap-2 sm:gap-3 xl:gap-5">
+              <div className="hidden xl:block">
                 <SearchBox />
               </div>
-              <div className="flex items-center gap-2 bg-gray-900/50 backdrop-blur-sm px-3 md:px-4 py-1.5 rounded-full border border-gray-700">
+              <div className="hidden items-center gap-2 rounded-full border border-gray-700 bg-gray-900/50 px-3 py-1.5 backdrop-blur-sm sm:flex xl:px-4">
                 <span className="w-2 h-2 md:w-3 md:h-3 rounded-full bg-green-500 animate-pulse"></span>
                 <p className="text-white font-semibold text-sm md:text-base">
                   {time}
@@ -280,7 +284,7 @@ const Header = () => {
                 rel="noopener noreferrer"
                 className="hover:text-orange-400 transition-colors"
               >
-                <FaGithub className="text-xl md:text-2xl cursor-pointer" />
+                <FaGithub className="cursor-pointer text-xl xl:text-2xl" />
               </a>
 
               {/* Profile Image with Click Handler */}
@@ -337,7 +341,7 @@ const Header = () => {
               <div className="w-12 h-1 bg-gray-600 rounded-full hover:bg-orange-400 transition-colors duration-200" />
             </div>
 
-            <div className="px-6 pb-8 mt-4">
+            <div className="mt-3 px-4 pb-6 sm:mt-4 sm:px-6 sm:pb-8">
               <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center gap-2">
                   <FaArrowUp className="rotate-45 text-2xl text-orange-400" />
@@ -345,7 +349,7 @@ const Header = () => {
                     Siam.dev
                   </Link>
                 </div>
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-3 sm:gap-4">
                   <MusicBox />
                   <a
                     href="https://github.com/Khalid-Sifullah-Siam"

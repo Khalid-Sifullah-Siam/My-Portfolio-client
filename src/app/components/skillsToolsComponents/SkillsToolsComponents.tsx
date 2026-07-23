@@ -43,7 +43,7 @@ const SkillsToolsComponents = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="mx-auto w-full py-6 sm:py-8">
       {/* Header Section */}
       <div className="text-center mb-10">
         <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -139,7 +139,7 @@ const SkillsToolsComponents = () => {
           </div>
         )}
       </div>
-      <div className="flex py-8 items-center justify-between">
+      <div className="flex flex-wrap items-center justify-between gap-3 py-8">
         <div className="flex items-center gap-2 px-4 py-2 rounded-md hover:bg-gray-900 cursor-pointer">
           <IoIosArrowBack />
           <Link href="/projects" className="text-white font-bold">

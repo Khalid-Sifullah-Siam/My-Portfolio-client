@@ -5,8 +5,8 @@ const AboutPage = () => {
   return (
     <div className="space-y-10 py-4">
       <div>
-        <h1 className="text-3xl font-bold text-white">About Khalid</h1>
-        <p className="py-4 text-3xl font-bold text-gray-400">
+        <h1 className="text-2xl font-bold text-white sm:text-3xl">About Khalid</h1>
+        <p className="py-4 text-xl font-bold text-gray-400 sm:text-2xl lg:text-3xl">
           More than just a title—let&apos;s get to know me better.
         </p>
       </div>
@@ -62,7 +62,7 @@ const AboutPage = () => {
         </div>
       </section>
 
-      <div className="flex items-center justify-between">
+      <div className="flex flex-wrap items-center justify-between gap-3">
         <div className="flex cursor-pointer items-center gap-2 rounded-md px-4 py-2 hover:bg-gray-900">
           <IoIosArrowBack />
           <Link href="/" className="font-bold text-white">

@@ -132,7 +132,7 @@ const Stats = () => {
               </span>
             </div>
 
-            <h1 className="text-5xl md:text-7xl font-bold  mb-4 text-white">
+            <h1 className="mb-4 text-3xl font-bold text-white sm:text-5xl md:text-7xl">
               GitHub Stats
             </h1>
 
@@ -152,7 +152,7 @@ const Stats = () => {
           </div>
 
           {/* Stats Cards */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+          <div className="mb-12 grid grid-cols-1 gap-4 min-[420px]:grid-cols-2 md:grid-cols-4">
             {[
               { icon: VscRepo, value: stats?.publicRepos, label: "Repositories", color: "text-orange-400" },
               { icon: FaStar, value: stats?.totalStars, label: "Total Stars", color: "text-yellow-400" },

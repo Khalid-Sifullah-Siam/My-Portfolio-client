@@ -51,7 +51,7 @@ const ProjectDetailCard = ({ project }: { project: Project }) => {
   return (
     <div className="space-y-6 text-gray-300">
       {/* Title */}
-      <h1 className="text-3xl font-bold text-white">{project.title}</h1>
+      <h1 className="text-2xl font-bold text-white sm:text-3xl">{project.title}</h1>
 
       {/* Description */}
       <p className="leading-relaxed text-gray-400">{project.descriptioin}</p>
@@ -114,13 +114,14 @@ const ProjectDetailCard = ({ project }: { project: Project }) => {
       </div>
 
       {/* Links */}
-      <div className="flex gap-4 pt-4">
+      <div className="flex flex-wrap gap-3 pt-4 sm:gap-4">
         {project.links.map((link, i) => (
           <a
             key={i}
             href={link.url}
             target="_blank"
-            className="flex items-center gap-2 bg-orange-800 px-4 py-2 rounded-md text-gray-300 font-semibold hover:text-white transition"
+            rel="noopener noreferrer"
+            className="flex flex-1 items-center justify-center gap-2 rounded-md bg-orange-800 px-4 py-2 font-semibold text-gray-300 transition hover:text-white min-[420px]:flex-none"
           >
             {link.name === "GitHub" ? (
               <FaGithub size={20} />
@@ -140,7 +141,7 @@ const ProjectDetailCard = ({ project }: { project: Project }) => {
         <div className="relative group">
           {/* Main Image */}
           <div
-            className="relative w-full h-75 sm:h-100 md:h-125 cursor-pointer overflow-hidden rounded-lg"
+            className="relative h-56 w-full cursor-pointer overflow-hidden rounded-lg sm:h-80 md:h-100 xl:h-125"
             onClick={() => openModal(project.screenshots[currentIndex])}
           >
             <Image
@@ -156,13 +157,15 @@ const ProjectDetailCard = ({ project }: { project: Project }) => {
             <>
               <button
                 onClick={prevSlide}
-                className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all duration-200 opacity-0 group-hover:opacity-100"
+                aria-label="Previous screenshot"
+                className="absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-black/60 p-2 text-white transition-all duration-200 md:opacity-0 md:group-hover:opacity-100"
               >
                 <FiChevronLeft size={24} />
               </button>
               <button
                 onClick={nextSlide}
-                className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all duration-200 opacity-0 group-hover:opacity-100"
+                aria-label="Next screenshot"
+                className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-black/60 p-2 text-white transition-all duration-200 md:opacity-0 md:group-hover:opacity-100"
               >
                 <FiChevronRight size={24} />
               </button>
@@ -218,14 +221,14 @@ const ProjectDetailCard = ({ project }: { project: Project }) => {
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 backdrop-blur-sm"
           onClick={closeModal}
         >
-          <div className="relative max-w-7xl w-full mx-4">
+          <div className="relative mx-3 w-full max-w-7xl sm:mx-4">
             <button
               onClick={closeModal}
               className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors"
             >
               <IoClose size={32} />
             </button>
-            <div className="relative w-full h-[80vh]">
+            <div className="relative h-[70vh] w-full sm:h-[80vh]">
               <Image
                 src={selectedImage}
                 alt="Full screen screenshot"
