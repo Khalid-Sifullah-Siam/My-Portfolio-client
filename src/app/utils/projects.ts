@@ -657,4 +657,73 @@ export const projects = [
       "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/hireloop-client/main/public/photos/Screenshot%20%28182%29.png",
     ],
   }
+  ,{
+    id: 12,
+    title: "FundHorizon",
+    slug: "fund-horizon",
+    short_description:
+      "FundHorizon is a role-based crowdfunding platform connecting creators with supporters for meaningful projects.",
+    descriptioin:
+      "The platform supports campaign discovery, credit-based contributions, creator campaign management, admin moderation, Stripe credit purchases, notifications, reports, and withdrawal workflows.",
+    techStack: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "MongoDB",
+      "JWT Authentication",
+      "Stripe",
+      "ImgBB",
+      "Recharts",
+      "Swiper",
+    ],
+    features: [
+      "Supporter, creator, and admin role-based dashboards",
+      "Campaign search, filtering, sorting, and detail pages",
+      "Credit purchase and contribution workflow with Stripe",
+      "Creator campaign creation, updates, approvals, and withdrawals",
+      "Admin user, campaign, contribution, report, and withdrawal management",
+      "Notifications for approvals, contributions, and platform activity",
+      "Protected routes with persistent authenticated sessions",
+      "Responsive campaign cards, charts, forms, and dashboard layouts",
+    ],
+    challenges: [
+      "Coordinating three role-specific workflows across one platform",
+      "Maintaining accurate credit balances during contributions, refunds, and purchases",
+      "Building a trustworthy moderation and withdrawal process for crowdfunding data",
+    ],
+    learnings: [
+      "Designing secure role-based authorization for full-stack applications",
+      "Connecting Stripe payments with internal credit and transaction records",
+      "Creating transparent dashboards for campaign, contribution, and payout tracking",
+    ],
+    futurePlans: [
+      "Add campaign comments, creator updates, and richer supporter engagement",
+      "Introduce automated email notifications and campaign analytics",
+      "Improve fraud detection, reporting, and payout verification workflows",
+    ],
+    links: [
+      {
+        name: "Live Demo",
+        url: "https://fund-horizon-client.vercel.app/",
+      },
+      {
+        name: "GitHub",
+        url: "https://github.com/Khalid-Sifullah-Siam/FundHorizon-Client",
+      },
+    ],
+    screenshots: [
+      "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/FundHorizon-Client/main/public/images/Screenshot%20%28426%29.png",
+      "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/FundHorizon-Client/main/public/images/Screenshot%20%28427%29.png",
+      "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/FundHorizon-Client/main/public/images/Screenshot%20%28428%29.png",
+      "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/FundHorizon-Client/main/public/images/Screenshot%20%28429%29.png",
+      "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/FundHorizon-Client/main/public/images/Screenshot%20%28430%29.png",
+      "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/FundHorizon-Client/main/public/images/Screenshot%20%28431%29.png",
+      "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/FundHorizon-Client/main/public/images/Screenshot%20%28432%29.png",
+      "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/FundHorizon-Client/main/public/images/Screenshot%20%28433%29.png",
+      "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/FundHorizon-Client/main/public/images/Screenshot%20%28434%29.png",
+      "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/FundHorizon-Client/main/public/images/Screenshot%20%28435%29.png",
+      "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/FundHorizon-Client/main/public/images/Screenshot%20%28436%29.png",
+      "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/FundHorizon-Client/main/public/images/Screenshot%20%28437%29.png",
+    ],
+  },
 ];
