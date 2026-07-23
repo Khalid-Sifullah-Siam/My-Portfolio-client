@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 type Project = {
   title: string;
@@ -12,7 +13,13 @@ type Project = {
 
 const ProjectCard = ({ project }: { project: Project }) => {
   return (
-    <article className="overflow-hidden rounded-xl border border-gray-800 bg-[#18181B] transition-all duration-300 hover:scale-[1.03] hover:shadow-lg">
+    <motion.article
+      initial={{ opacity: 0, y: 16 }}
+      animate={{ opacity: 1, y: 0 }}
+      whileHover={{ y: -6 }}
+      transition={{ duration: 0.3, ease: "easeOut" }}
+      className="overflow-hidden rounded-xl border border-gray-800 bg-[#18181B] shadow-lg transition-shadow duration-300 hover:shadow-orange-950/20"
+    >
       <Link href={`/projects/${project.slug}`}>
         <div className="relative h-48 w-full bg-gray-900">
           <Image
@@ -38,7 +45,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
           </div>
         </div>
       </Link>
-    </article>
+    </motion.article>
   );
 };
 

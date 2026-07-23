@@ -1,6 +1,7 @@
 "use client";
 
 import { projects } from "@/app/utils/projects";
+import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
@@ -24,11 +25,20 @@ const ProjectsPage = () => {
         A lot of ideas,but some are still under development!
       </p>
       {/* Projects Grid */}
-      <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 xl:grid-cols-3">
-        {visibleProjects.map((project) => (
-          <ProjectCard key={project.id} project={project} />
-        ))}
-      </div>
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={currentPage}
+          initial={{ opacity: 0, x: 16 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: -16 }}
+          transition={{ duration: 0.25, ease: "easeOut" }}
+          className="grid grid-cols-1 gap-6 lg:grid-cols-2 xl:grid-cols-3"
+        >
+          {visibleProjects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
+        </motion.div>
+      </AnimatePresence>
 
       <nav
         aria-label="Projects pagination"
