@@ -58,13 +58,13 @@ const HomePage = () => {
 
 
   return (
-    <div className="mx-auto mt-4 max-w-4xl sm:mt-6">
-      <div className="flex flex-col items-center">
+    <div className="mx-auto mt-4 max-w-6xl sm:mt-6 lg:mt-10">
+      <div className="flex flex-col items-center gap-8 lg:flex-row lg:items-center lg:gap-12">
         {/* Profile Image with Glass Badges Below */}
-        <div className="flex w-full justify-center">
-          <div className="relative mt-6 flex flex-col items-center sm:mt-4">
+        <div className="flex w-full justify-center lg:w-[42%]">
+          <div className="relative mt-6 flex flex-col items-center sm:mt-4 lg:mt-0">
             {/* Main Profile Image */}
-            <div className="relative z-10 h-44 w-44 overflow-hidden rounded-full border-2 border-white/20 shadow-2xl shadow-black/30 backdrop-blur-sm min-[375px]:h-52 min-[375px]:w-52 sm:h-56 sm:w-56">
+            <div className="relative z-10 h-48 w-48 overflow-hidden rounded-full border-2 border-white/20 shadow-2xl shadow-black/30 backdrop-blur-sm min-[375px]:h-56 min-[375px]:w-56 sm:h-64 sm:w-64 lg:h-72 lg:w-72">
 <Image
     src={profilePicture || "/profile.jpg"}  
     alt="Khalid Saifullah Siam - Professional Portrait"
@@ -76,7 +76,7 @@ const HomePage = () => {
             </div>
 
             {/* Glass Ring */}
-            <div className="absolute top-[44%] h-56 w-56 -translate-y-1/2 rounded-full border border-white/10 bg-white/2 backdrop-blur-3xl min-[375px]:h-64 min-[375px]:w-64 sm:h-68 sm:w-68" />
+            <div className="absolute top-[44%] h-60 w-60 -translate-y-1/2 rounded-full border border-white/10 bg-white/2 backdrop-blur-3xl min-[375px]:h-68 min-[375px]:w-68 sm:h-76 sm:w-76 lg:h-84 lg:w-84" />
 
             {/* Badges Below Image - Horizontal Row with Dots */}
             <div className="z-10 mt-5 flex flex-wrap items-center justify-center gap-2 sm:mt-6 sm:gap-3">
@@ -99,22 +99,26 @@ const HomePage = () => {
         </div>
 
         {/* Content */}
-        <div className="mt-7 w-full max-w-3xl text-center sm:mt-8">
+        <div className="w-full max-w-3xl text-center lg:w-[58%] lg:text-left">
           <h1 className="text-3xl font-bold text-white sm:text-4xl">
             Khalid Saifullah Siam
           </h1>
           <h2 className="mt-2 text-2xl font-bold text-orange-400 sm:text-3xl">
             Code Freak, Problem Solver!
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-gray-300 sm:text-base">
+          <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-gray-300 sm:text-base lg:mx-0">
             I am a dedicated Software Engineer specializing in full-stack
             application development. I enjoy crafting responsive web solutions
             using modern technologies like Next.js, React, Tailwind CSS,
             Node.js, Express, and MongoDB, while also applying DevOps practices,
             continuously aiming to deliver high-quality, comprehensive,
-            user-centric software solutions.
+            user-centric software solutions. I focus on writing clean,
+            maintainable code and turning complex requirements into intuitive
+            digital experiences. From planning and development to deployment
+            and optimization, I value performance, reliability, and thoughtful
+            collaboration throughout every stage of a project.
           </p>
-          <div className="mt-5 flex flex-col items-stretch justify-center gap-3 min-[400px]:flex-row min-[400px]:items-center">
+          <div className="mt-5 flex flex-col items-stretch justify-center gap-3 min-[400px]:flex-row min-[400px]:items-center lg:justify-start">
             <div className="group flex items-center justify-center gap-2 rounded-md bg-orange-600 px-5 py-2.5 font-semibold transition-all duration-300 hover:bg-orange-700">
               <a
                 href={resumeUrl}
