@@ -589,5 +589,72 @@ export const projects = [
       "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/tech-Bazaar-client/main/public/images/Screenshot%20%28483%29.png",
       "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/tech-Bazaar-client/main/public/images/Screenshot%20%28484%29.png",
     ],
+  },
+  {
+    id: 11,
+    title: "HireLoop",
+    slug: "hireloop",
+    short_description:
+      "HireLoop is a role-based job platform connecting job seekers, recruiters, and administrators.",
+    descriptioin:
+      "HireLoop makes job searching and hiring easier with job discovery, saved jobs, applications, company and job management, role-based dashboards, subscription plans, and Stripe payments.",
+    techStack: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "MongoDB",
+      "Better Auth",
+      "Stripe",
+      "HeroUI",
+      "Motion",
+      "ImgBB",
+    ],
+    features: [
+      "Job seeker, recruiter, and admin roles",
+      "Job search with filters and detailed job pages",
+      "Saved jobs and application tracking",
+      "Recruiter company and job post management",
+      "Admin user, company, job, and payment controls",
+      "Free, Pro, Premium, Growth, and Enterprise plans",
+      "Stripe checkout with subscription history",
+      "Protected routes and account approval system",
+    ],
+    challenges: [
+      "Designing separate role-based experiences for three user types",
+      "Managing subscription limits and protected dashboard access",
+      "Connecting applications, job posts, company approval, and payments",
+    ],
+    learnings: [
+      "Role-based access control with Better Auth",
+      "Stripe subscription and payment lifecycle integration",
+      "Building scalable job seeker and recruiter dashboards",
+    ],
+    futurePlans: [
+      "Add AI-powered job matching and resume recommendations",
+      "Introduce recruiter interview scheduling and email notifications",
+      "Improve analytics for applications, hiring, and subscription growth",
+    ],
+    links: [
+      {
+        name: "Live Demo",
+        url: "https://hireloop-client-six.vercel.app/",
+      },
+      {
+        name: "GitHub",
+        url: "https://github.com/Khalid-Sifullah-Siam/hireloop-client",
+      },
+    ],
+    screenshots: [
+      "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/hireloop-client/main/public/photos/Screenshot%20%28173%29.png",
+      "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/hireloop-client/main/public/photos/Screenshot%20%28174%29.png",
+      "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/hireloop-client/main/public/photos/Screenshot%20%28175%29.png",
+      "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/hireloop-client/main/public/photos/Screenshot%20%28176%29.png",
+      "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/hireloop-client/main/public/photos/Screenshot%20%28177%29.png",
+      "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/hireloop-client/main/public/photos/Screenshot%20%28178%29.png",
+      "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/hireloop-client/main/public/photos/Screenshot%20%28179%29.png",
+      "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/hireloop-client/main/public/photos/Screenshot%20%28180%29.png",
+      "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/hireloop-client/main/public/photos/Screenshot%20%28181%29.png",
+      "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/hireloop-client/main/public/photos/Screenshot%20%28182%29.png",
+    ],
   }
 ];
