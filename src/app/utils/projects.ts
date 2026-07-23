@@ -410,7 +410,7 @@ export const projects = [
       },
       {
         name: "GitHub",
-        url: "https://github.com/moshiurrahmandeap11/pressclub-netrakona-client",
+        url: "https://github.com/Khalid-Sifullah-Siam/Pressclub-client",
       },
     ],
     screenshots: [
