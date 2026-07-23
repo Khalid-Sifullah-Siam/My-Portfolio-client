@@ -16,7 +16,7 @@ export default function UserLayout({
       <div className="mx-auto w-full max-w-[1600px] pt-4 sm:pt-6 lg:pt-10">
         <div className="h-px bg-gray-700 w-full"></div>
 
-        <main className="flex min-h-screen min-w-0 gap-0 lg:gap-6">
+        <main className="flex min-w-0 gap-0 lg:gap-6">
           <aside className="relative hidden w-56 shrink-0 px-4 lg:block xl:w-64">
             <div className="absolute left-0 top-0 h-full w-px bg-gray-700"></div>
             <div className="absolute right-0 top-0 h-full w-px bg-gray-700"></div>
