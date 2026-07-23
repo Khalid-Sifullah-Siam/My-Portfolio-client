@@ -923,4 +923,59 @@ export const projects = [
       "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/wanderlast-client/main/public/ReadmeImages/Screenshot%20%2853%29.png",
     ],
   },
+  {
+    id: 16,
+    title: "English Janala",
+    slug: "english-janala",
+    short_description:
+      "English Janala is a responsive vocabulary learning platform for exploring lessons, learning words, and improving pronunciation.",
+    descriptioin:
+      "Learners can browse lesson-based vocabulary, search words, open detailed definitions, listen to pronunciations, and practice through a clean responsive interface.",
+    techStack: [
+      "HTML5",
+      "Tailwind CSS",
+      "DaisyUI",
+      "Vanilla JavaScript",
+      "Web Speech API",
+      "Programming Hero Open API",
+    ],
+    features: [
+      "Dynamic lesson buttons loaded from the vocabulary API",
+      "Vocabulary cards filtered by selected lesson",
+      "Global search across available words",
+      "Word details modal with meaning, example, pronunciation, and synonyms",
+      "Text-to-speech pronunciation using the Web Speech API",
+      "Loading spinner and empty-state handling",
+      "Active lesson highlighting for clear navigation",
+      "Responsive layout with FAQ accordion",
+    ],
+    challenges: [
+      "Managing asynchronous API requests while keeping the interface responsive",
+      "Handling empty lessons and missing vocabulary data gracefully",
+      "Organizing filtering, word details, pronunciation, and search in vanilla JavaScript",
+    ],
+    learnings: [
+      "Building a data-driven interface with fetch and DOM manipulation",
+      "Improving UX with loading states, modal details, and active controls",
+      "Using the Web Speech API to add practical pronunciation support",
+    ],
+    futurePlans: [
+      "Add saved words and favorite vocabulary collections",
+      "Improve search with instant filtering or debounced input",
+      "Add user progress tracking and lesson completion features",
+    ],
+    links: [
+      { name: "Live Demo", url: "https://khalid-sifullah-siam.github.io/English-Janala" },
+      { name: "GitHub", url: "https://github.com/Khalid-Sifullah-Siam/English-Janala" },
+    ],
+    screenshots: [
+      "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/English-Janala/main/assets/Images/Screenshot%20%2874%29.png",
+      "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/English-Janala/main/assets/Images/Screenshot%20%2875%29.png",
+      "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/English-Janala/main/assets/Images/Screenshot%20%2876%29.png",
+      "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/English-Janala/main/assets/Images/Screenshot%20%2877%29.png",
+      "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/English-Janala/main/assets/Images/Screenshot%20%2878%29.png",
+      "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/English-Janala/main/assets/Images/Screenshot%20%2879%29.png",
+      "https://raw.githubusercontent.com/Khalid-Sifullah-Siam/English-Janala/main/assets/Images/Screenshot%20%2880%29.png",
+    ],
+  },
 ];
