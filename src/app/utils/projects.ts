@@ -1,4 +1,4 @@
-export const projects = [
+const projectsData = [
   {
     id: 1,
     title: "BookShelf",
@@ -1186,3 +1186,35 @@ export const projects = [
     ],
   },
 ];
+
+const featuredProjectOrder = new Map([
+  ["tech-bazaar", 0],
+  ["doc-appoint", 1],
+  ["artbro", 2],
+  ["ticketo", 3],
+  ["wanderlast", 4],
+  ["hireloop", 5],
+]);
+
+const latestProjectBaselineId = 19;
+
+export const projects = projectsData.sort((firstProject, secondProject) => {
+  const firstIsNew = firstProject.id > latestProjectBaselineId;
+  const secondIsNew = secondProject.id > latestProjectBaselineId;
+  const firstPriority = featuredProjectOrder.get(firstProject.slug);
+  const secondPriority = featuredProjectOrder.get(secondProject.slug);
+
+  if (firstIsNew || secondIsNew) {
+    if (firstIsNew && secondIsNew) return secondProject.id - firstProject.id;
+    return firstIsNew ? -1 : 1;
+  }
+
+  if (firstPriority !== undefined && secondPriority !== undefined) {
+    return firstPriority - secondPriority;
+  }
+
+  if (firstPriority !== undefined) return -1;
+  if (secondPriority !== undefined) return 1;
+
+  return secondProject.id - firstProject.id;
+});
