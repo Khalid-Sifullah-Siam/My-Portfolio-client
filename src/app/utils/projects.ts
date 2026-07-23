@@ -467,5 +467,63 @@ export const projects = [
       "https://i.postimg.cc/4NHp2qbQ/Screenshot-2026-04-08-202220.png",
       "https://i.postimg.cc/HxLywhks/Screenshot-2026-04-08-202233.png",
     ],
+  },
+  {
+    id: 9,
+    title: "docAppoint",
+    slug: "doc-appoint",
+    short_description:
+      "docAppoint is a smart healthcare booking platform for finding doctors and managing appointments online.",
+    descriptioin:
+      "docAppoint helps patients browse verified doctors, view doctor details, book appointments, and manage their healthcare journey through a secure and user-friendly platform.",
+    techStack: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "MongoDB",
+      "Better Auth",
+      "Axios",
+    ],
+    features: [
+      "Secure email/password and Google authentication",
+      "Browse and search verified doctors",
+      "Doctor details and availability pages",
+      "Online appointment booking",
+      "Patient dashboard and profile management",
+      "Appointment update and cancellation flow",
+    ],
+    challenges: [
+      "Implementing secure authentication with protected routes",
+      "Building a smooth doctor discovery and booking flow",
+      "Managing appointment data across patient-facing pages",
+    ],
+    learnings: [
+      "Better Auth integration with MongoDB",
+      "Next.js App Router and protected routing",
+      "Building responsive healthcare booking interfaces",
+    ],
+    futurePlans: [
+      "Add doctor-side appointment management and availability controls",
+      "Introduce email reminders and appointment notifications",
+      "Add prescription and medical history management features",
+    ],
+    links: [
+      {
+        name: "Live Demo",
+        url: "https://doc-appoint-client-siam-17.vercel.app/",
+      },
+      {
+        name: "GitHub",
+        url: "https://github.com/Khalid-Sifullah-Siam/doc-appoint-client-siam-17",
+      },
+    ],
+    screenshots: [
+      "https://image.thum.io/get/width/1920/crop/1080/https://doc-appoint-client-siam-17.vercel.app/",
+      "https://image.thum.io/get/width/1920/crop/1080/https://doc-appoint-client-siam-17.vercel.app/about",
+      "https://image.thum.io/get/width/1920/crop/1080/https://doc-appoint-client-siam-17.vercel.app/doctors",
+      "https://image.thum.io/get/width/1920/crop/1080/https://doc-appoint-client-siam-17.vercel.app/v1/dashboard",
+      "https://image.thum.io/get/width/1920/crop/1080/https://doc-appoint-client-siam-17.vercel.app/v1/dashboard/profile",
+      "https://image.thum.io/get/width/1920/crop/1080/https://doc-appoint-client-siam-17.vercel.app/v1/dashboard/bookings",
+    ],
   }
 ];
