@@ -17,11 +17,13 @@ const education = [
   {
     year: "2020",
     degree: "Secondary School Certificate (SSC) — Science Group",
+    institution: "Amjuman Adarsha Government High School",
     result: "GPA: 5.00 / 5.00",
   },
   {
     year: "2017",
     degree: "Junior School Certificate (JSC)",
+    institution: "Amjuman Adarsha Government High School",
     result: "GPA: 5.00 / 5.00",
   },
   {
