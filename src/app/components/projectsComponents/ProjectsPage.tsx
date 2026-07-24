@@ -3,20 +3,27 @@
 import { projects } from "@/app/utils/projects";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import ProjectCard from "./ProjectsCard/ProjectCard";
 
 const PROJECTS_PER_PAGE = 6;
 
-const ProjectsPage = () => {
-  const [currentPage, setCurrentPage] = useState(1);
+const ProjectsPage = ({ initialPage }: { initialPage: number }) => {
+  const router = useRouter();
+  const [currentPage, setCurrentPage] = useState(initialPage);
   const totalPages = Math.ceil(projects.length / PROJECTS_PER_PAGE);
   const startIndex = (currentPage - 1) * PROJECTS_PER_PAGE;
   const visibleProjects = projects.slice(
     startIndex,
     startIndex + PROJECTS_PER_PAGE,
   );
+
+  const changePage = (page: number) => {
+    setCurrentPage(page);
+    router.replace(`/projects?page=${page}`, { scroll: false });
+  };
 
   return (
     <div className="py-4">
@@ -35,7 +42,7 @@ const ProjectsPage = () => {
           className="grid grid-cols-1 gap-6 lg:grid-cols-2 xl:grid-cols-3"
         >
           {visibleProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+            <ProjectCard key={project.id} project={project} page={currentPage} />
           ))}
         </motion.div>
       </AnimatePresence>
@@ -46,7 +53,7 @@ const ProjectsPage = () => {
       >
         <button
           type="button"
-          onClick={() => setCurrentPage((page) => page - 1)}
+          onClick={() => changePage(currentPage - 1)}
           disabled={currentPage === 1}
           className="rounded-md border border-gray-700 px-3 py-2 text-sm font-semibold text-gray-300 transition hover:border-orange-500 hover:text-white disabled:cursor-not-allowed disabled:opacity-40"
         >
@@ -60,7 +67,7 @@ const ProjectsPage = () => {
             <button
               key={page}
               type="button"
-              onClick={() => setCurrentPage(page)}
+              onClick={() => changePage(page)}
               aria-current={currentPage === page ? "page" : undefined}
               className={`h-10 w-10 rounded-md border text-sm font-semibold transition ${
                 currentPage === page
@@ -75,7 +82,7 @@ const ProjectsPage = () => {
 
         <button
           type="button"
-          onClick={() => setCurrentPage((page) => page + 1)}
+          onClick={() => changePage(currentPage + 1)}
           disabled={currentPage === totalPages}
           className="rounded-md border border-gray-700 px-3 py-2 text-sm font-semibold text-gray-300 transition hover:border-orange-500 hover:text-white disabled:cursor-not-allowed disabled:opacity-40"
         >

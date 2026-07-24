@@ -11,7 +11,7 @@ type Project = {
   screenshots: string[];
 };
 
-const ProjectCard = ({ project }: { project: Project }) => {
+const ProjectCard = ({ project, page }: { project: Project; page: number }) => {
   return (
     <motion.article
       initial={{ opacity: 0, y: 16 }}
@@ -20,7 +20,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
       transition={{ duration: 0.3, ease: "easeOut" }}
       className="overflow-hidden rounded-xl border border-gray-800 bg-[#18181B] shadow-lg transition-shadow duration-300 hover:shadow-orange-950/20"
     >
-      <Link href={`/projects/${project.slug}`}>
+      <Link href={`/projects/${project.slug}?page=${page}`}>
         <div className="relative h-48 w-full bg-gray-900">
           <Image
             src={project.screenshots[0]}
