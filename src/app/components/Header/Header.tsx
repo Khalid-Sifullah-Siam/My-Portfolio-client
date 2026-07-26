@@ -242,7 +242,7 @@ const Header = () => {
                     </li>
                     <li className="group flex items-center gap-2 font-semibold text-gray-400 hover:text-white transition-all duration-200">
                       <a
-                        href="https://drive.google.com/uc?export=download&id=1EahL5hbPGUQvJ7gFTagCZQ3pyDqlWVx7"
+                        href="https://drive.google.com/uc?export=download&id=1UtKXYgb4wgB-HvRv4oo8tlKgPDIWGLDI"
                         download="Resume.pdf"
                         className="flex items-center gap-2 text-gray-400 hover:text-white transition-all duration-200"
                       >
